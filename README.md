@@ -51,7 +51,7 @@ cp config_template.json config.json
 nano config.json
 ```
 
-Replace all `REPLACE_ME` placeholders with your actual API keys and specific device serial numbers. Here is where to find your keys:
+Replace all `REPLACE_ME` placeholders with your actual API keys and specific device serial numbers. Here is where to find your keys (see [config guide](config_guide.md) for more details):
 * **Octopus:** Find your Account Number and API key under your online Octopus Dashboard.
 * **FoxESS:** Generate an API key in the FoxESS Cloud User Centre. You will also need your Inverter Serial Number.
 * **MyEnergi:** Generate an API key at `myaccount.myenergi.com` and find your Hub/Zappi serial numbers in the myenergi app.
