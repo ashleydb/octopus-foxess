@@ -1,0 +1,60 @@
+{
+ "_comment": "Energy Manager configuration. Fill in all REPLACE_ME values before first run.",
+
+ "octopus": {
+  "api_key": "sk_live_REPLACE_ME",
+  "account": "A-REPLACE_ME",
+  "mpan": "REPLACE_ME",
+  "cheap_threshold_pence": 15.0,
+  "check_dispatches": true,
+  "check_free_sessions": true,
+  "free_session_cache_minutes": 60
+ },
+
+ "foxess": {
+  "api_key": "REPLACE_ME",
+  "device_sn": "REPLACE_ME",
+  "base_url": "https://www.foxesscloud.com",
+  "_charge_power_comment": "Match this to 'Charge Power From Grid' in the FoxESS app. For 2x5kW batteries this is 10500W.",
+  "charge_power_watts": 10500
+ },
+
+ "myenergi": {
+  "_comment": "Generate your API key at myaccount.myenergi.com. WARNING: this replaces your myenergi app password.",
+  "hub_serial": "REPLACE_ME",
+  "api_key": "REPLACE_ME",
+  "zappi_serial": "REPLACE_ME"
+ },
+
+ "battery": {
+  "min_soc_cheap": 100,
+  "min_soc_expensive": 20
+ },
+
+ "offpeak_window": {
+  "start": "23:30",
+  "end": "05:30"
+ },
+
+ "dashboard": {
+  "host": "127.0.0.1",
+  "port": 8765,
+  "_password_comment": "Set a password to protect the dashboard when accessed via Cloudflare.",
+  "password": "REPLACE_WITH_A_STRONG_PASSWORD"
+ },
+
+ "telegram": {
+  "_comment": "Get bot_token from @BotFather. Get chat_id by messaging your bot then visiting https://api.telegram.org/bot<TOKEN>/getUpdates",
+  "bot_token": "REPLACE_ME",
+  "chat_id": "REPLACE_ME",
+  "_notify_comment": "Which events trigger a Telegram message. Set any to false to silence that notification.",
+  "notify_mode_change": true,
+  "notify_foxess_error": true,
+  "notify_free_session": true
+ },
+
+ "logging": {
+  "max_bytes": 500000,
+  "backup_count": 3
+ }
+}
